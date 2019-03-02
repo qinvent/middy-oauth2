@@ -1,0 +1,40 @@
+{
+  "name": "middy-oauth2",
+  "version": "0.1.0",
+  "description": "Middy JS middleware to verify OAuth2 tokens",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahanoff/middy-oauth2.git"
+  },
+  "keywords": [
+    "middyjs",
+    "oauth2",
+    "jwt"
+  ],
+  "author": "Akhan Zhakiyanov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ahanoff/middy-oauth2/issues"
+  },
+  "homepage": "https://github.com/ahanoff/middy-oauth2#readme",
+  "dependencies": {
+    "http-errors": "^1.7.2",
+    "jsonwebtoken": "^8.5.0",
+    "middy": "^0.22.1",
+    "qs": "^6.6.0",
+    "querystring": "^0.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-jest": "^24.1.0",
+    "jest": "^24.1.0"
+  },
+  "jest": {
+    "verbose": true
+  }
+}
