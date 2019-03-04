@@ -1,7 +1,7 @@
 {
   "name": "middy-oauth2",
   "version": "0.1.0",
-  "description": "Middy JS middleware to verify OAuth2 tokens",
+  "description": "Middy JS middleware to verify OAuth2 Bearer tokens",
   "main": "index.js",
   "scripts": {
     "test": "jest"
@@ -11,8 +11,11 @@
     "url": "git+https://github.com/ahanoff/middy-oauth2.git"
   },
   "keywords": [
+    "middy",
     "middyjs",
     "oauth2",
+    "bearer",
+    "middleware",
     "jwt"
   ],
   "author": "Akhan Zhakiyanov",

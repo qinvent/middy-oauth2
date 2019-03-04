@@ -5,7 +5,7 @@ Middy JS middleware to validate OAuth2 tokens
 Download node at [nodejs.org](http://nodejs.org) and install it, if you haven't already.
 
 ```sh
-npm install middy-aouth2 --save
+npm install middy-oauth2 --save
 ```
 
 ## Configuration
@@ -15,7 +15,7 @@ Middleware options:
  - realm - realm value to include in WWW-Authenticate response header
  - secretOrPublicKey - is a string, buffer, or object containing either the secret for HMAC algorithms or the PEM encoded private key for RSA and ECDSA. Middleware uses [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken) under the hood
  - jwtOptions - options to verify jwt based on [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken).
- 
+
 ### Usage
 
 ```javascript
@@ -33,7 +33,7 @@ const helloWorld = async (event) => {
 }
 
 const handler = middy(helloWorld)
-  .use(httpHeaderNormalizer()) // Make sure authorization header is saved in lower case
+  .use(httpHeaderNormalizer()) // Make sure headers are saved in canonical form
   .use(verifyBearerToken({
       logger: console.error,
       realm: "Hello world",
